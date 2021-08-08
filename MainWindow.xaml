@@ -1,0 +1,24 @@
+﻿<Window x:Class="Community_Folder_Finder.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Loaded="Window_Loaded"
+        ResizeMode="CanMinimize"
+        Title="Where is my damn community folder? by tomihbk#3833" Height="243" Width="776" Background="#FF2D2D30">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="13*"/>
+            <ColumnDefinition Width="243*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="1" Margin="1.831,27,41,27">
+            <Label FontSize="36" FontWeight="Bold" Margin="00,0,00,0" Foreground="White">Where is my damn community folder ?</Label>
+            <TextBox x:Name="tbxCommunityPath" Margin="10,20,10,20" Height="30" FontSize="14" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"></TextBox>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Button x:Name="btnCopyToCommunity" Width="200" Height="30" FontWeight="Bold" Margin="0,0,90,0" Click="BtnCopyPath_Click">COPY TO CLIPBOARD</Button>
+                <Button x:Name="btnGoToCommunity" Width="200" Height="30" FontWeight="Bold" Click="BtnGoToCommunity_Click">GO TO COMMUNITY FOLDER</Button>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
